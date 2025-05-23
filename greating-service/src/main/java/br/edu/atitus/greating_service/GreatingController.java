@@ -15,15 +15,8 @@ import br.edu.atitus.greating_service.configs.GreatingConfig;
 @RequestMapping("/greating-service")
 public class GreatingController {
 
-//	@Value("${greating-service.greating}")
-//	private String greating;
-//	@Value("${greating-service.default-name}")
-//	private String defaultName;
-
-	//@Autowired
 	private final GreatingConfig greatingConfig; 
 
-	// Injeção de dependência via método construtor
 	public GreatingController(GreatingConfig greatingConfig) {
 		super();
 		this.greatingConfig = greatingConfig;

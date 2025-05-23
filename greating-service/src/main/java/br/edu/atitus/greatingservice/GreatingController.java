@@ -14,12 +14,6 @@ import br.edu.atitus.greatingservice.configs.GreatingConfig;
 @RequestMapping("/greating-service")
 public class GreatingController {
 	
-//	@Value("${greating-service.greating}")
-//	private String greating;
-//	
-//	@Value("${greating-service.default-name}")
-//	private String defaultName;
-	
 	private final GreatingConfig greatingConfig;
 	
 	public GreatingController(GreatingConfig greatingConfig) {
